@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #0f0; /* Green color for title */
+}
+
+p {
+    color: #fff; /* White color for description */
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue color for button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Particle animation */
+.particle {
+    position: absolute;
+    background-color: #f00; /* Red color for particles */
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: particle-animation 5s linear infinite;
+}
+
+@keyframes particle-animation {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
